@@ -1,6 +1,7 @@
 function mostrar()
 {
 	let vDestino;
+
 	vDestino = document.getElementById("txtIdDestino").value;
 //  var destinoIngresado =txtIdDestino.value;
 
@@ -18,6 +19,8 @@ function mostrar()
 		case "Cordoba":
 			alert("Esta en el sur de Argentina.");
 			break;
+		default:
+			alert("Esta provincia no esta contemplada.");
 
 	}
 

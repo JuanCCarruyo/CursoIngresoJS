@@ -1,6 +1,7 @@
 function mostrar()
 {
 	let vDestino;
+	let Temp;
 	vDestino = document.getElementById("txtIdDestino").value;
 //  var destinoIngresado =txtIdDestino.value;
 
@@ -8,14 +9,17 @@ function mostrar()
 	{
 		case "Bariloche":
 		case "Cordoba":
-			alert("Hace FRIO en el destino.");
+			Temp = "FRIO";
 			break;
 		case "Cataratas":
 		case "Mar del plata":
-			alert("Hace CALOR en el destino.");
+			Temp = "CALOR";
 			break;
 
 	}
+
+	alert("Hace "+Temp+" en "+vDestino)
+
 
 
 }//FIN DE LA FUNCIÓN
