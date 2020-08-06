@@ -8,9 +8,9 @@ function mostrar()
 	let i=0;
 	let positivo=0;
 	let negativo=1;
-	let x="Si";
+	let x="si";
 
-	while(x == "Si" || x == "si"){  //cuenta el 0 entonces son 5 las iteraciones
+	while(x == "si"){  //cuenta el 0 entonces son 5 las iteraciones
 
 		num = parseInt(prompt("Ingrese un numero: "));
 		i = i + 1;
@@ -20,7 +20,7 @@ function mostrar()
 		else{
 			negativo = negativo * num;
 		}
-		x = prompt("Quieres introducir otro numero?")
+		x = prompt("Quieres introducir otro numero?").toLowerCase();
 
 	}
 
