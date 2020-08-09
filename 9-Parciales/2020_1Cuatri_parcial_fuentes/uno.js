@@ -32,6 +32,7 @@ c) Cuántas unidades de jabones hay en total
 	let canttotalbarbijo=0;
 
 	let masunidades=0;
+	let mastipo;
 
 	let a=0;
 	let b=0;
@@ -84,26 +85,29 @@ c) Cuántas unidades de jabones hay en total
 
 		}
 
-	} 
+	} // fin For
 
 	if (canttotalalcohol > canttotalbarbijo && canttotalalcohol > canttotaljabon){
 		masunidades = canttotalalcohol;
 		mascont = a;
+		mastipo = "alcohol";
 	}
 	else if (canttotaljabon > canttotalalcohol && canttotaljabon > canttotalbarbijo){
 		masunidades = canttotaljabon;
 		mascont = j;
+		mastipo = "jabón";
 	}
 	else {
 		masunidades = canttotalbarbijo;
 		mascont = b;
+		mastipo = "barbijo";
 	}
 
 	document.write("a) Del más barato de los alcohol, la cantidad de unidades y el fabricante"+"<br>");
 	document.write("Es el fabricante "+fabrmin+" con "+cantmin+" unidades."+"<br>"+"<br>");
 
-	document.write("b) Del tipo con mas unidades, el promedio por compra"+"<br>");
-	document.write("Es "+(masunidades/mascont)+"<br>"+"<br>");
+	document.write("b) El tipo de producto con mas unidades es el "+mastipo+ ", y el promedio por compra"+"<br>");
+	document.write("es de $"+(masunidades/mascont)+"<br>"+"<br>");
 
 	document.write("c) Cuántas unidades de jabones hay en total"+"<br>");
 	document.write("Hay "+canttotaljabon+" unidades de jabon.");
